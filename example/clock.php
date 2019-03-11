@@ -1,9 +1,9 @@
 <?php
 
-//namespace startmatter\Example;
+//namespace travisketchum\Example;
 include '../vendor/autoload.php';
-use startmatter\CountdownClock\Clock;
-use startmatter\CountdownClock\ClockInterface;
+use travisketchum\CountdownClock\Clock;
+use travisketchum\CountdownClock\ClockInterface;
 
 /**
  * Example class to inject into the countdown clock
