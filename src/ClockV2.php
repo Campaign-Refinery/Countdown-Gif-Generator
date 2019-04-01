@@ -96,7 +96,7 @@ class ClockV2 {
         $dates = $this->dates;
         $separator = $this->clock->getSeparator();
         //Count through our frames
-        for ($i = 0; $i <= 60; $i++) {
+        for ($i = 0; $i <= (60 * 5); $i++) {
             $interval = $dates->deadline->diff($dates->now);
             //If we're at or after the deadline - then just 0 the clock
             if ($dates->deadline < $dates->now) {
@@ -110,7 +110,7 @@ class ClockV2 {
                     $days = str_pad($interval->days, $this->clock->getDaysLen(), '0', STR_PAD_LEFT);
                 }
                 $text = $interval->format($days . $separator . '%H' . $separator . '%I' . $separator . '%S');
-                $loops = 0;
+                $loops = 1; // don't loop!
             }
             //create a new image resource
             if (false !== ($filename = $this->clock->getBackgroundImageFilePath())) {
