@@ -43,7 +43,7 @@ class CountDownTimerHR implements ClockInterface {
      * @return integer spacing between symbol between countdown date elements
      */
     public function getSeparatorSpacing() {
-        return 7;
+        return 2;
     }
     /**
      * @return integer length of days countdown date element
@@ -55,7 +55,7 @@ class CountDownTimerHR implements ClockInterface {
      * @return integer spacing between characters
      */
     public function getSpacing() {
-        return 3;
+        return 4;
     }
     /**
      * @return string font file path
