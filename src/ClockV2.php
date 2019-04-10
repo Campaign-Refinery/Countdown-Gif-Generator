@@ -96,7 +96,7 @@ class ClockV2 {
         $dates = $this->dates;
         $separator = $this->clock->getSeparator();
         //Count through our frames
-        for ($i = 0; $i <= (60 * 5); $i++) {
+        for ($i = 0; $i <= 60; $i++) {
             $interval = $dates->deadline->diff($dates->now);
             //If we're at or after the deadline - then just 0 the clock
             if ($dates->deadline < $dates->now) {

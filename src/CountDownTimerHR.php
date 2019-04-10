@@ -55,7 +55,7 @@ class CountDownTimerHR implements ClockInterface {
      * @return integer spacing between characters
      */
     public function getSpacing() {
-        return 3;
+        return 4;
     }
     /**
      * @return string font file path
